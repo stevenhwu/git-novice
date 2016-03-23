@@ -30,7 +30,7 @@
           <h2 class="subtitle">Ignoring Things</h2>
           <section class="objectives panel panel-warning">
 <div class="panel-heading">
-<h2><span class="glyphicon glyphicon-certificate"></span>Learning Objectives</h2>
+<h2 id="learning-objectives"><span class="glyphicon glyphicon-certificate"></span>Learning Objectives</h2>
 </div>
 <div class="panel-body">
 <ul>
@@ -92,6 +92,55 @@ fatal: no files added</code></pre>
 #        results/
 
 nothing to commit, working directory clean</code></pre>
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 id="ignoring-nested-files"><span class="glyphicon glyphicon-pencil"></span>Ignoring nested files</h2>
+</div>
+<div class="panel-body">
+<p>Given a directory structure that looks like: <sub><sub><sub> results/data results/plots </sub></sub></sub></p>
+<p>How would you ignore only <code>results/plots</code> and not <code>results/data</code>?</p>
+</div>
+</section>
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 id="including-specific-files"><span class="glyphicon glyphicon-pencil"></span>Including specific files</h2>
+</div>
+<div class="panel-body">
+<p>How would you ignore all <code>.data</code> files in your root directory except for <code>final.data</code>? Hint: Find out what <code>!</code> (the exclamation point operator) does</p>
+</div>
+</section>
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 id="ignoring-files-deep-in-a-directory"><span class="glyphicon glyphicon-pencil"></span>Ignoring files deep in a directory</h2>
+</div>
+<div class="panel-body">
+<p>Given a directory structure that looks like: <sub><sub><sub> results/data/position/gps/useless.data results/plots </sub></sub></sub></p>
+<p>What’s the shortest <code>.gitignore</code> rule you could write to ignore all <code>.data</code> files in <code>result/data/position/gps</code> Hint: What does appending <code>**</code> to a rule accomplish?</p>
+</div>
+</section>
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 id="the-order-of-rules"><span class="glyphicon glyphicon-pencil"></span>The order of rules</h2>
+</div>
+<div class="panel-body">
+<p>Given a <code>.gitignore</code> file with the following contents: <sub><sub><sub> <em>.data !</em>.data </sub></sub></sub></p>
+<p>What will be the result?</p>
+</div>
+</section>
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 id="log-files"><span class="glyphicon glyphicon-pencil"></span>Log-files</h2>
+</div>
+<div class="panel-body">
+<p>You wrote a script that creates many intermediate log-files of the form log_01, log_02, log_03, etc. You want to keep them but you do not want to track them through <code>git</code>.</p>
+<ol style="list-style-type: decimal">
+<li><p>Write <strong>one</strong> <code>.gitignore</code> entry that excludes files of the form <code>log_01</code>, <code>log_02</code>, etc.</p></li>
+<li><p>Test your “ignore pattern” by creating some dummy files of the form <code>log_01</code>, etc.</p></li>
+<li><p>You find that the file <code>log_01</code> is very important after all, add it to the tracked files without changing the <code>.gitignore</code> again.</p></li>
+<li><p>Discuss with your neighbor what other types of files could reside in your directory that you do not want to track and thus would exclude via <code>.gitignore</code>.</p></li>
+</ol>
+</div>
+</section>
         </div>
       </div>
       </article>
@@ -105,5 +154,6 @@ nothing to commit, working directory clean</code></pre>
     <!-- Javascript placed at the end of the document so the pages load faster -->
     <script src="http://software-carpentry.org/v5/js/jquery-1.9.1.min.js"></script>
     <script src="css/bootstrap/bootstrap-js/bootstrap.js"></script>
+    <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
   </body>
 </html>
