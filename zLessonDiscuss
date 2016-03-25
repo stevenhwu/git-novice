@@ -1,6 +1,22 @@
 ### Things to discuss on March 24 2016
- - index.html not sync with current md/html files.
- Maybe 12-citation is more useful than 14-supplemental-rstudio
+ - 01-basics: Do you discuss about the history/distributed/centralized?
+ - 03-create: Do they need to know abouth the .git folder
+ - 06-ignore: personally, put lower priority on this. I might cover this after remote
+ - 09-conflict: mergetool?
+ - reference and discussion: cheatsheet? when to give them? How much info to include?
 
- - How much emphasis do you need to put on 10-12 open science/licensing/hosting 
- - git branch can be very complicated, any plan for intermediate/advanced git lesson (like R)
+ - When they make a mistake, a complicate one, which I might have to fix it with multiple commands they haven't learn. How to explain these process?
+
+ - Do you recommend doing examples with multiple files?
+
+
+ - How much emphasis do you need to put on 10-12 open science/licensing/hosting
+ - git branch can be very complicated, what is the plan for intermediate/advanced git lesson (like R)? I know there are some public repo floating around, any official plan?
+
+ 07-github: mentioned about the `-u` flag
+
+
+
+
+  - index.html not sync with current md/html files.
+  Maybe 12-citation is more useful than 14-supplemental-rstudio
